@@ -1,0 +1,159 @@
+body {
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	background: url("../assets/background.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#todo-app {
+	max-width: 650px;
+	max-height: 500px;
+	margin: auto;
+	border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.shadow {
+  	-webkit-box-shadow: 0 1px 3px 0 rgba(60,64,67,.3), 0 4px 8px 3px rgba(60,64,67,.15);
+    box-shadow: 0 1px 3px 0 rgba(60,64,67,.3), 0 4px 8px 3px rgba(60,64,67,.15);
+    border-color: transparent;
+}
+
+.sidebar {
+	width: 150px;
+    height: 100%;
+    background-color: rgba(33,36,54,0.9);
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    z-index: 1;
+    overflow: auto;
+}
+
+.osx-btns {
+	padding: 10px;
+	background-color: #101022;
+	cursor: pointer;
+}
+
+.osx-btns .btn-osx {
+	display: inline-block;
+	font-size: 9px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 0 7px 4px 0;
+	text-align: center;
+}
+
+.osx-btns .btn-osx span {
+	visibility: hidden;
+}
+
+.osx-btns:hover span {
+	visibility: visible;
+}
+
+.btn-close {
+	background-color: #ff594f;
+	border: 1px solid #ff594f;
+}
+.btn-minimalize {
+	background-color: #ffbc1b;
+	border: 1px solid #ffbc1b;
+}
+.btn-maximize {
+	background-color: #00cd46;
+	border: 1px solid #00cd46;
+}
+
+.sidemenu a {
+	display: block;
+	padding: 15px;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.sidemenu a.active, .sidemenu a:hover {
+	background-color: #292a48;
+}
+
+.sidemenu a span {
+	color: #8a8995;
+	float: right;
+}
+
+.sidemenu a img {
+    top: 2px;
+    position: relative;
+    margin-right: 7px;
+}
+
+.main {
+	height: 100%;
+	max-height: 480px;
+	padding: 10px 0 10px 15px;
+	margin-left: 150px;
+	background-color: #f6f6f6;
+	border-radius: 0 10px 10px 0;
+}
+
+.scrolled {
+	overflow-y: scroll;
+	max-height: 480px;
+	padding-right: 15px;
+}
+
+.task-item {
+	background-color: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	padding: 12px;
+}
+
+.task-item {
+	margin: 5px 0;
+	color: #080606;
+}
+
+.task-date {
+	color: #8a8995;
+	font-size: 12px;
+}
+
+.star {
+	float: right;
+}
+
+.cls-1 {
+	fill: #fff;
+	fill-rule: evenodd;
+	stroke: #e2e2e2;
+  	stroke-width: 1.5px;
+  	cursor: pointer;
+}
+
+.cls-1:hover, .cls-1.active {
+	fill: #21233d;
+}
+
+@media only screen and (max-width: 475px) {
+	#todo-app .sidebar {
+		position: relative;
+		width: 100%;
+	    height: auto;
+	}
+	#todo-app .main {
+		width: 100%;
+	    height: 100%;
+	    margin-left: 0;
+	    box-sizing: border-box;
+	}
+}
